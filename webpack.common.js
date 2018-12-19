@@ -24,7 +24,13 @@ module.exports = {
       {
         test: /\.(sass|scss|css)$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../', // since img folder is outside css/scss folder,
+              // we are going one folder up, so images (for example in background-image url()) could resolve correctly.
+            },
+          },
           {
             loader: 'css-loader',
             options: {
