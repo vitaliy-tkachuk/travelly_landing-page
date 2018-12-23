@@ -63,6 +63,7 @@
     "prettier": "^1.15.3",
     "prettier-package-json": "^2.0.1",
     "sass-loader": "^7.1.0",
+    "svg-url-loader": "^2.3.2",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.27.1",

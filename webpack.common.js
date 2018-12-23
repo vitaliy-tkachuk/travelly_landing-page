@@ -1,5 +1,5 @@
 // Base variables
-const path = require('path');
+//  const path = require('path');
 
 // Importing plugins that do not come by default in webpack
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -63,19 +63,58 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|gif|jpe?g|ico|svg)$/,
+        test: /\.(png|gif|jpe?g|ico)$/,
         exclude: /node_modules/, // excluding images in node_modules
         use: [
           {
-            loader: 'file-loader',
+            loader: 'url-loader',
             options: {
               name: 'img/[name].[ext]',
+              limit: 8192,
+              fallback: 'file-loader', // file-loader is default value
+            },
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 85,
+              },
+              // optipng.enabled: false will disable optipng
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: '85-100',
+                speed: 4,
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              // the webp option will enable WEBP
+              webp: {
+                quality: 85,
+              },
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(svg)$/,
+        exclude: /fonts/ /* dont want svg fonts from fonts folder to be included */,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              noquotes: true,
             },
           },
         ],
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        exclude: /img/,
         use: [
           {
             loader: 'file-loader',
