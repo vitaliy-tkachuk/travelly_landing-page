@@ -70,7 +70,7 @@ module.exports = {
             loader: 'url-loader',
             options: {
               name: 'img/[name].[ext]',
-              limit: 8192,
+              limit: 6192,
               fallback: 'file-loader', // file-loader is default value
             },
           },
@@ -87,7 +87,7 @@ module.exports = {
               },
               pngquant: {
                 quality: '85-100',
-                speed: 4,
+                speed: 3,
               },
               gifsicle: {
                 interlaced: false,

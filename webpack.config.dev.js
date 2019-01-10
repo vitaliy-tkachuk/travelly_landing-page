@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const merge = require('webpack-merge'); // webpack-merge is used to merge common settings with development specific ones.
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const common = require('./webpack.common.js'); // Importing common webpack config
@@ -13,12 +12,11 @@ module.exports = merge(common, {
   },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist',
-    hot: true,
+    contentBase: path.resolve(__dirname, 'dist'),
+    inline: true,
     port: 8081,
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new BrowserSyncPlugin(
       // BrowserSync options
       {

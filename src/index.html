@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-Hello World!!!
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Travelly - Where will you go next?</title>
+  </head>
+  <body>
+    <div id="main-wrapper">
+      <header class="header">
+        <div class="header__top-line">
+          <a href="/" class="logo"> <img src="img/logo.png" alt="" /> </a>
+          <nav id="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="#" class="h3">About</a></li>
+              <li class="main-nav__item"><a href="#" class="h3">Blog</a></li>
+              <li class="main-nav__item"><a href="#" class="h3">Press</a></li>
+              <li class="main-nav__item"><a href="#" class="h3">Contact</a></li>
+            </ul>
+            <div id="menu-button" class="hamburger"><span></span></div>
+          </nav>
+        </div>
+        <div class="header__middle-composition flex-column-center">
+          <h1 class="header__middle-composition__title">Where will you go next?</h1>
+          <form class="center-form" action="">
+            <input
+              type="text"
+              name="search"
+              class="center-form__text-input"
+              placeholder="Start typing..."
+            />
+            <input type="submit" class="center-form__submit-button" value="Go" />
+          </form>
+        </div>
+      </header>
+      <section class="s-destinations">
+        <h2 class="s-destinations__title">Top Destinations</h2>
+        <p class="s-destinations__description">
+          Some of the top destinations for your next summer adventure.
+        </p>
+        <div class="destinations__container">
+          <a href="#" class="destinations__item grow">
+            <div class="destinations__item__img-holder">
+              <img src="img/australia.png" class="destinations__item__img" alt="" />
+              <span class="destinations__item__price">$1,095</span>
+            </div>
+            <div class="destinations__item__info-holder">
+              <h3 class="destinations__item__title">Amazing Australia</h3>
+              <p class="destinations__item__description">
+                Become inspired to travel to Australia. Discover fantastic things to do & places to
+                go.
+              </p>
+            </div>
+          </a>
+          <a href="#" class="destinations__item grow">
+            <div class="destinations__item__img-holder">
+              <img src="img/south-america.png" class="destinations__item__img" alt="" />
+              <span class="destinations__item__price">$1,295</span>
+            </div>
+            <div class="destinations__item__info-holder">
+              <h3 class="destinations__item__title">Ancient south america</h3>
+              <p class="destinations__item__description">
+                Become inspired to travel to South America. Discover fantastic things to do & places
+                to go.
+              </p>
+            </div>
+          </a>
+          <a href="#" class="destinations__item grow">
+            <div class="destinations__item__img-holder">
+              <img src="img/north-america.png" class="destinations__item__img" alt="" />
+              <span class="destinations__item__price">$695</span>
+            </div>
+            <div class="destinations__item__info-holder">
+              <h3 class="destinations__item__title">Modern north america</h3>
+              <p class="destinations__item__description">
+                Become inspired to travel to North America. Discover fantastic things to do & places
+                to go.
+              </p>
+            </div>
+          </a>
+          <a href="#" class="destinations__item grow">
+            <div class="destinations__item__img-holder">
+              <img src="img/europe.png" class="destinations__item__img" alt="" />
+              <span class="destinations__item__price">$295</span>
+            </div>
+            <div class="destinations__item__info-holder">
+              <h3 class="destinations__item__title">Classic europe</h3>
+              <p class="destinations__item__description">
+                Become inspired to travel to Europe. Discover fantastic things to do & places to go.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="s-articles">
+        <div class="h1 s-articles__title">Before you leave</div>
+        <div class="s-articles__container">
+          <div class="s-articles__item">
+            <a href="#" class="h2 s-articles__item__title">visa & documents</a>
+            <p class="s-articles__item__description">
+              There are some things you should take care of before going to your next adventure.
+              We’ll help you to get required visas and documents needed.
+            </p>
+          </div>
+          <div class="s-articles__item">
+            <a href="#" class="h2 s-articles__item__title">accommodation</a>
+            <p class="s-articles__item__description">
+              There are some things you should take care of before going to your next adventure.
+              We’ll help you to get required visas and documents needed.
+            </p>
+          </div>
+          <div class="s-articles__item">
+            <a href="#" class="h2 s-articles__item__title">visa & documents</a>
+            <p class="s-articles__item__description">
+              There are some things you should take care of before going to your next adventure.
+              We’ll help you to get required visas and documents needed.
+            </p>
+          </div>
+        </div>
+        <div class="subscribe-composition flex-column-center">
+          <h2>get hottest deals to your inbox</h2>
+          <form class="center-form" action="">
+            <input
+              type="text"
+              name="search"
+              class="center-form__text-input--gray"
+              placeholder="Email address"
+            />
+            <input type="submit" class="center-form__submit-button" value="Go" />
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer__copyright">
+          Copyright © 2018 Travelly. <br class="br-on-mobile" />All Rights Reserved. Designed for
+          Despreneur.
+        </p>
+        <div class="footer__menu">
+          <a href="/" class="h3 footer__menu__item">home</a>
+          <a href="#" class="h3 footer__menu__item">about</a>
+          <a href="#" class="h3 footer__menu__item">blog</a>
+          <a href="#" class="h3 footer__menu__item">press</a>
+          <a href="#" class="h3 footer__menu__item">contact</a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

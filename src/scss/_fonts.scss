@@ -1,7 +1,8 @@
 @import "_mixins/font-face";
 
-@include font-face("Roboto", "../fonts/RobotoRegular");
-@include font-face("Roboto", "../fonts/RobotoBold", 700);
+@include font-face("Opensans", "../fonts/Opensans-Light", 300);
+@include font-face("Opensans", "../fonts/Opensans-Regular", 400);
+@include font-face("Montserrat", "../fonts/Montserrat-Regular", 400);
 
 
 // Common weight name mapping

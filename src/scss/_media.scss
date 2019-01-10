@@ -1,5 +1,4 @@
-@import "vars";
-
+@import 'vars';
 
 /*==========  Mobile First  ========== */
 
@@ -37,17 +36,132 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /* */
+  .s-articles__container {
+    flex-flow: column;
+  }
+
+  .s-articles__item {
+    width: 100%;
+  }
+
+  .destinations__item {
+    display: flex;
+    width: 100%;
+  }
+
+  .footer {
+    flex-flow: column-reverse;
+    padding-top: 15px;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /* */
+  h1,
+  .h1 {
+    font-size: 2.6rem;
+  }
+  section {
+    padding: 30px 15px;
+  }
+  .header__top-line {
+    background-color: $black;
+    position: fixed;
+    height: 54px;
+  }
+  .logo {
+    margin: 0 0 0 10px;
+  }
+  #main-nav {
+    margin: 0;
+  }
+  .hamburger {
+    position: fixed;
+    display: block;
+  }
+  .main-nav__list {
+    overflow: hidden;
+    background-color: $bg-color-gray-darkest;
+    position: fixed;
+    top: 0;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    height: 100vh;
+    transition: all 0.5s ease;
+    z-index: 99;
+    &.open {
+      width: 100%;
+    }
+  }
+
+  .main-nav__item {
+    color: $accent-color;
+  }
+
+  .main-nav__item {
+    margin: 5px 0;
+  }
+
+  .center-form {
+    display: flex;
+    justify-content: center;
+    width: 347px;
+  }
+  .center-form__submit-button {
+    padding: 10px 35px;
+  }
+
+  .destinations__item {
+    display: flex;
+    width: 100%;
+  }
+
+  .footer {
+    flex-flow: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 15px;
+  }
+  .footer__menu {
+    display: none;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /* */
+  .header {
+    height: 100vh;
+  }
+  h1,
+  .h1 {
+    font-size: 1.7rem;
+  }
+  .destinations__container {
+    justify-content: center;
+  }
+  .destinations__item {
+    flex-flow: column;
+    width: 240px;
+  }
+  .footer__menu {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .br-on-mobile {
+    display: initial;
+  }
+
+  .center-form {
+    display: flex;
+    justify-content: center;
+    width: 247px;
+  }
+  .center-form__submit-button {
+    padding: 10px 25px;
+  }
 }
 
 /* Custom, iPhone Retina */
