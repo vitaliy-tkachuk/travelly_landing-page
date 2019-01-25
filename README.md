@@ -1,4 +1,3 @@
-# Webpack4 Front-end Boilerplate for single-page application
 <a target="_blank" href="https://opensource.org/licenses/MIT" title="License: MIT">
   <img src="https://img.shields.io/badge/License-MIT-blue.svg">
 </a>
@@ -7,9 +6,22 @@
 </a>
 <a target="_blank" href="http://makeapullrequest.com" title="PRs Welcome"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
 
-## Purpose
+Responsive layout of landing page for Travel Website designed by [Tomas Laurinavicius](https://dribbble.com/shots/1497212-Travelly-Free-Travel-Website-PSD-Template#shot-description) and coded by me.
 
-Building simple static single-page websites.
+Live Demo: https://vitfl.github.io/travelly_landing-page/
 
+Used technologies:
 
-... more readme is coming soon.
+- HTML 5, CSS 3 (with SASS preprocessor), Bootstrap 4 grid, JavaScript (ES6)
+- Boilerplate: [
+  Webpack4 Front-end SPA Boilerplate](https://github.com/VitFL/webpack4-frontend-spa-boilerplate)
+
+Used tools:
+
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Avocode](https://avocode.com/)
+
+Folder structure:
+
+- **dist** - compiled and minified distribution version.
+- **src** - source files: fonts, images, js, sass etc.
